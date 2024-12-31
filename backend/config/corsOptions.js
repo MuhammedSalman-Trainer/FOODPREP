@@ -1,4 +1,4 @@
-const allowedOrigins = ['http://localhost:5173','http://localhost:5174','https://foodprep-1.onrender.com','https://food-del-frontend-fp7s.onrender.com']
+const allowedOrigins = ['http://localhost:5173','http://localhost:5174','https://foodprep-1.onrender.com','https://foodprepuser.onrender.com']
 
 const corsOptions ={
     origin: (origin,callback)=>{

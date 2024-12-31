@@ -1,0 +1,66 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('../../assets/header_img.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s  ;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: #21063e;
+    font-size: max(4.5vw,22px);
+    
+    text-shadow: 
+        0.7px 0.7px 0px #fff, 
+       -0.7px 0.7px 0px #fff, 
+        0.7px -0.7px 0px #fff, 
+       -0.7px -0.7px 0px #fff; /* Creates a small white outline effect */
+}
+
+.header-contents p {
+    color: #21063e;
+    font-size: 1vw;
+}
+
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+    .header-contents{
+         max-width: 45%;
+    }
+}
+@media (max-width: 750px) {
+    .header-contents{
+         max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

@@ -59,7 +59,7 @@ const MyOrders = () => {
                                     `${item.name} x ${item.quantity}${idx === order.items.length - 1 ? '' : ', '}`
                                 )}
                             </p>
-                            <p>${order.amount}</p>
+                            <p>₹{order.amount}</p>
                             <p>Items: {order.items.length}</p>
                             <p>
                                 <span>&#x25cf;</span>

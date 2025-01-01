@@ -6,9 +6,9 @@
 }
 
 .navbar .logo{
-    width: max(200px,10%)
+    width: 200px;
 }
-
+ 
 .navbar-menu{
     display: flex;
     list-style: none;

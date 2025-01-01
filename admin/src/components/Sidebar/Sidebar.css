@@ -6,6 +6,8 @@
     font-size: max(1vw,10px);
 }
 
+
+
 .sidebar-options{
     padding-top: 40px;
     padding-left: 20%;
@@ -40,4 +42,35 @@
     .sidebar-option p{
         display: none;
     }
+}
+
+@media (max-width: 420px) {
+    .sidebar {
+        width: 90%;
+        min-height: auto;
+        border:none;
+    }
+    .sidebar-options {
+        flex-direction: row;
+        padding:0;
+        padding-top: 10px;
+        gap:0;
+    }
+
+    .sidebar-option {
+        flex: 1;
+        justify-content: center;
+        border: 1px solid #a9a9a9;
+        padding: 5px 0;
+        border-radius: 0;
+    }
+
+    .sidebar-option img {
+        width: 20px;
+    }
+
+    .sidebar-option p {
+        display: none; 
+    }
+
 }

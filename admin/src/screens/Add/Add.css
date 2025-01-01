@@ -1,4 +1,5 @@
 .container{
+    place-self: center;
     width: max(50%, 300px);
     border: 1px solid var(--theme-color);
     border-radius: 2%;

@@ -42,27 +42,29 @@ const Add = ({url}) => {
     }
   }
   return (
-    <div className='add'>
+    
+    <div className="add">
+      <div className='container'>
       <form onSubmit={onSubmitHandler} className='flex-col'>
         <div className="add-img-upload flex-col">
-          <p>upload image</p>
+          <p>Upload image</p>
           <label htmlFor="image">
             <img src={ image ? URL.createObjectURL(image) : assets.upload_area} alt="" />
           </label>
           <input onChange={(e)=>{setImage(e.target.files[0])}} type="file" id="image"  hidden required/>
         </div>
         <div className="add-product-name flex-col">
-          <p>Product name</p>
+          <p>Name</p>
           <input onChange={onChangeHandler} value={data.name} type="text" name="name" placeholder='Type here'/>
         </div>
         <div className="add-product-description flex-col">
-          <p>Product description</p>
+          <p>Description</p>
           <textarea onChange={onChangeHandler} value={data.description} name="description" placeholder='write content here' rows="6"></textarea>
         </div>
 
         <div className="add-category-price">
           <div className="add-category flex-col">
-            <p>Product category</p>
+            <p>Category</p>
             <select onChange={onChangeHandler} value={data.category} name="category">
               <option value="Salad">Salad</option>
               <option value="Rolls">Rolls</option>
@@ -75,14 +77,15 @@ const Add = ({url}) => {
             </select>
           </div>
           <div className="add-price flex-col">
-            <p>Product price</p>
-            <input onChange={onChangeHandler} value={data.price} type="Number" name="price" placeholder="$20"/>
+            <p>Price</p>
+            <input onChange={onChangeHandler} value={data.price} type="Number" name="price" placeholder="₹150"/>
           </div>
         </div>
 
         <button type='submit' className='add-btn'>ADD</button>
 
       </form>
+    </div>
     </div>
   )
 }

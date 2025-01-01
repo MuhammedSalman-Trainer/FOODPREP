@@ -64,3 +64,11 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+@media (max-width: 420px) {
+    
+    .add{
+        width: 90%;
+        margin-left:0;
+    }
+}

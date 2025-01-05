@@ -113,6 +113,9 @@
 }
 
 @media (max-width: 480px) {
+    .cart{
+        margin-top: 50px;
+    }
     .food-image{
         display:none;
     }

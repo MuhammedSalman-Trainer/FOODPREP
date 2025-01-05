@@ -111,3 +111,12 @@
         justify-content: start;
     }
 }
+
+@media (max-width: 480px) {
+    .food-image{
+        display:none;
+    }
+    .cart-items-title{
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+    }
+}

@@ -11,7 +11,7 @@ const Cart = () => {
     <div className="cart">
       <div className="cart-items">
         <div className="cart-items-title">
-          <p>Items</p>
+          <p className="food-image">Items</p>
           <p>Title</p>
           <p>Price</p>
           <p>Quantity</p>
@@ -25,7 +25,7 @@ const Cart = () => {
             return (
               <>
                 <div className="cart-items-title cart-items-item">
-                  <img src={url+"/images/"+food.image} alt="" />
+                  <img className="food-image" src={url+"/images/"+food.image} alt="" />
                   <p>{food.name}</p>
                   <p>₹{food.price}</p>
                   <p>{cartItems[food._id]}</p>

@@ -4,7 +4,8 @@
 
 .cart-items-title{
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1.5fr;
+    text-align: center;
     align-items: center;
     color: grey;
     font-size: max(1vw,12px);
@@ -27,6 +28,14 @@
 
 .cart-items-item .cross{
     cursor: pointer;
+}
+
+.cart-counter{
+    justify-content: center;
+    position: inherit;
+}
+.cart-counter img{
+    width: 22px
 }
 
 .cart-bottom{

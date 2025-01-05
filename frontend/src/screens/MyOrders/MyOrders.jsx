@@ -26,7 +26,6 @@ const MyOrders = () => {
     };
 
     useEffect(() => {
-        // Check for token in local storage
         const storedToken = localStorage.getItem('token');
         if (storedToken) {
             setToken(storedToken); // Assuming setToken is available in StoreContext

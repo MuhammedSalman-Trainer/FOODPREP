@@ -2,9 +2,10 @@ import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../Context/StoreContext";
 import { useNavigate } from "react-router-dom";
+import {assets} from '../../assets/assets'
 
 const Cart = () => {
-  const { cartItems, food_list, removeFromCart , getTotalCartAmount,url} = useContext(StoreContext);
+  const { cartItems, food_list, removeFromCart , getTotalCartAmount,url,addToCart} = useContext(StoreContext);
   const navigate = useNavigate();
   return (
     <div className="cart">
@@ -29,7 +30,11 @@ const Cart = () => {
                   <p>₹{food.price}</p>
                   <p>{cartItems[food._id]}</p>
                   <p>₹{cartItems[food._id] * food.price}</p>
-                  <p onClick={() => removeFromCart(food._id)} className="cross"> x </p>
+                  <div className="food-item-counter cart-counter">
+                        <img className='remove-icon' onClick={() => removeFromCart(food._id)} src = {assets.remove_icon_red}/>
+                        <p>{cartItems[food._id]}</p>
+                        <img className='add-icon' onClick={() => addToCart(food._id)} src={assets.add_icon_green} alt="" />
+                    </div>
                 </div>
                 <hr />
               </>

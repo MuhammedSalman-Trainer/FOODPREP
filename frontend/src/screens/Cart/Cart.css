@@ -18,6 +18,7 @@
 
 .cart-items-item  img{
     width: 50px;
+    justify-self: center;
 }
 
 .cart hr{

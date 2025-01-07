@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./screens/Home/Home";
 import Cart from "./screens/Cart/Cart";
 import MyOrders from "./screens/MyOrders/MyOrders";
@@ -9,18 +9,16 @@ import PlaceOrder from "./screens/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 
-import {ToastContainer} from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [showLogin, setShowLogin] = React.useState(false);
   return (
     <>
-      {
-        showLogin?<LoginPopup setShowLogin={setShowLogin} />:<></>
-      }
+      {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
       <div className="app">
-        <ToastContainer/>
+        <ToastContainer />
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path="/" element={<Home />} />

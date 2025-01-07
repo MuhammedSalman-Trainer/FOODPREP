@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate,useLocation } from "react-router-dom";
 import { StoreContext } from "../../Context/StoreContext";
 
 const Navbar = ({ setShowLogin }) => {
     const [menu, setMenu] = useState("home");
     const navigate = useNavigate();
+    const location = useLocation();
     const { getTotalCartAmount, token, setToken, setCartItems } =
         useContext(StoreContext);
 
@@ -20,6 +21,7 @@ const Navbar = ({ setShowLogin }) => {
             <Link to="/">
                 <img src={assets.logo} alt="" className="logo" />
             </Link>
+            {location.pathname === "/" && (
             <ul className="navbar-menu">
                 <Link
                     to="/"
@@ -42,7 +44,8 @@ const Navbar = ({ setShowLogin }) => {
                 >
                     contact us
                 </a>
-            </ul>
+            </ul>)
+            }
             <div className="navbar-right"> 
                 <div className="navbar-search-icon">
                     <Link to="/cart">

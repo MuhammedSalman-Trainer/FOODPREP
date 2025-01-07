@@ -36,7 +36,8 @@
     position: inherit;
 }
 .cart-counter img{
-    width: 22px
+    width: 22px;
+    cursor: pointer;
 }
 
 .cart-bottom{

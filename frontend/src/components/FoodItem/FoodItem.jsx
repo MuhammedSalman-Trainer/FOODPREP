@@ -28,7 +28,6 @@ const FoodItem = ({id,name,price,description,image}) => {
             <p className="food-item-desc">
                 {description}
             </p>
-             
             <div className="food-item-price-rating">
                 <p className="food-item-price">
                     ₹{price}

@@ -133,7 +133,7 @@
 .nav-profile-dropdown li:hover{
     color: tomato
 }
-/*till here*/
+
 @media (max-width: 750px){
     .navbar-menu{
         display: none;  

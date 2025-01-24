@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 4%;
+    
 }
 .navbar .logo{
     width: max(200px,10%)

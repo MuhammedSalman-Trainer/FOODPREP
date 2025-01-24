@@ -8,11 +8,11 @@ const cors = require("cors");
 //app config
 const app = express();
 require("dotenv").config();
-app.use(cors(corsOptions));
 const port = process.env.PORT || 4000;
 
 //middleware
 app.use(express.json());
+app.use(cors(corsOptions));
 
 //connect to db
 connectDB();

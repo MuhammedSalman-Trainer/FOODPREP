@@ -35,11 +35,9 @@ const LoginPopup = ({setShowLogin}) => {
         try {
             const response = await axios.post(newUrl, data);
             if (curState === "Sign Up") {
-                // After signing up, switch to the "Log In" state
                 toast.success("Account created successfully! Please log in.");
                 setCurState("Log In");
             } else {
-                // Handle the login case
                 setToken(response.data.token);
                 localStorage.setItem("token", response.data.token);
                 setShowLogin(false);

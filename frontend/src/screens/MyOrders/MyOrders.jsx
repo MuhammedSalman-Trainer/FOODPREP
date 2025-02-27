@@ -26,16 +26,6 @@ const MyOrders = () => {
     };
 
     useEffect(() => {
-        const storedToken = localStorage.getItem('token');
-        if (storedToken) {
-            setToken(storedToken); // Assuming setToken is available in StoreContext
-        } else {
-            toast.error('Please log in properly.', { position: toast.POSITION.TOP_CENTER });
-            setIsLoading(false);
-        }
-    }, []);
-
-    useEffect(() => {
         if (token) {
             fetchOrders();
         }

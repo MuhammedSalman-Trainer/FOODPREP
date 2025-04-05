@@ -59,7 +59,7 @@ const Add = ({url}) => {
         </div>
         <div className="add-product-description flex-col">
           <p>Description</p>
-          <textarea onChange={onChangeHandler} value={data.description} name="description" placeholder='write content here' rows="6"></textarea>
+          <textarea onChange={onChangeHandler} value={data.description} name="description" placeholder='write content here' rows="2"></textarea>
         </div>
 
         <div className="add-category-price">

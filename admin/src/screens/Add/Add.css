@@ -3,7 +3,6 @@
     margin-left: max(5vw,25px);
     margin-block: 50px;
     color:#6d6d6d;
-    font-size: 1.6rem;
 }
 
 .container{
@@ -27,15 +26,15 @@
     min-width: 125px;
 }
 
-.add-product-name input,.add-product-desc textarea,.add-price input,
+.add-product-name input,.add-product-description textarea,.add-price input,
 .add-category select{
     padding: 10px;
     border: 1px solid var(--theme-color);
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 14px;
     color:#333;
 }
-.add-product-desc textarea{
+.add-product-description textarea{
     resize: none;
 }
 .add-btn{
@@ -53,11 +52,4 @@
 }
 .add-price input{
     width: 100%;
-}
-@media (max-width: 420px) {
-    
-    .add{
-        width: 90%;
-        margin-left:0;
-    }
 }
